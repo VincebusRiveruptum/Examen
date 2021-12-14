@@ -1,0 +1,97 @@
+.boton {
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 4px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.boton:hover {
+  background-color: #ff4949;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 4px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.contenedor_tienda {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.contenedor_tienda #producto {
+  margin: 2%;
+  border-width: 2px;
+  border-style: solid;
+  background-color: white;
+  width: 200px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedor_tienda #producto #foto {
+  text-align: center;
+}
+
+.contenedor_tienda #producto #foto img {
+  margin: 5%;
+  max-width: 128px;
+  height: auto;
+}
+
+.contenedor_tienda #producto #texto h1 {
+  font-size: large;
+  margin: 5%;
+}
+
+.contenedor_tienda #producto #texto #contenedor_estrellas {
+  text-align: center;
+  margin: 5%;
+}
+
+.contenedor_tienda #producto #texto #contenedor_estrellas #estrellas {
+  display: inline-block;
+}
+
+.contenedor_tienda #producto #botonver {
+  text-align: center;
+}
+
+.contenedor_tienda #producto #precio {
+  text-align: right;
+}
+
+.contenedor_tienda #producto #precio p {
+  margin: 5%;
+}
+
+.checked {
+  color: orange;
+}
+/*# sourceMappingURL=tienda.component.css.map */

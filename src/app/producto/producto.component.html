@@ -1,0 +1,42 @@
+
+<form [formGroup]="compra" (ngSubmit)="agregarProductoCarrito()" novalidate class="contenedor_tienda">
+    <div id="producto">
+        <div id="foto">
+            <img alt="Producto a la venta" src="..\..\assets\{{producto.foto}}">
+        </div>
+        <div id="contenedor_descripcion">
+            <div id="texto">
+                <h2>{{producto.marca}}</h2>
+                <h1>{{producto.nombre}}</h1>
+            </div>
+            <div id="descripcion">
+                <p>{{producto.descripcion}}</p>
+                <li *ngFor="let caracteristica of producto.especificaciones">
+                    {{caracteristica}}
+                </li>
+            </div>
+            <div id="precio">
+                <h3>Precio </h3>
+                <h2 style="color:rgb(0, 60, 255)">${{producto.precio}}</h2>
+            </div>    
+            <div id="cantidad">
+                <p>Cantidad: </p>
+                <input value="cantidad" formControlName="inputcantidad" id="inputcantidad" dir="ltr" type="number" min="1">
+            </div>
+            <div id="botoncarrito">
+                <button type="submit" class="boton" name="botonagregar">Agregar al Carrito</button>
+                <div *ngIf="estado">
+                    Producto agregado al carrito!
+               </div>  
+            </div>
+        </div>
+    </div>
+</form>
+
+<div id="recomendaciones">
+    <h1>Recomendaciones</h1>
+    <div id="botonrecomenado">
+        <button class="boton" name="btnrecomendado">Intel i7-12900K</button>
+
+    </div>
+</div>

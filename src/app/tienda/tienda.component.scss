@@ -1,0 +1,83 @@
+.boton {
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 4px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .boton:hover{
+    background-color: rgb(255, 73, 73);
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 4px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.contenedor_tienda{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-right: 15%;
+    margin-left: 15%;
+
+    #producto{   
+        margin: 2%;
+        border-width: 2px;
+        border-style:solid;
+        background-color: white;
+        width: 200px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        #foto{
+            text-align: center;
+            img{
+                margin:5%;           
+                max-width: 128px;
+                height: auto;
+            }
+        }
+        #texto{
+            h1{
+                font-size: large;
+                margin: 5%;
+                
+            }
+            #contenedor_estrellas{
+                text-align: center;
+                margin: 5%;
+                #estrellas{
+                    display: inline-block;
+                }
+                
+            }
+        } 
+        #botonver{
+            text-align: center;
+        }
+        #precio{
+            text-align: right;
+            p{  
+                margin: 5%;
+            }
+        }
+    }
+}
+
+.checked {
+    color: orange;
+  }

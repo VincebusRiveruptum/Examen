@@ -1,0 +1,30 @@
+
+<div class="contenedor_tienda">
+    <div *ngFor="let producto of listaProductos" id="producto" >
+        <div id="foto">
+                <img src="..\..\assets\{{producto.foto}}">
+        </div>
+        <div id="texto">
+            <h1>{{producto.nombre}}</h1>
+
+            <div id="contenedor_estrellas">
+                <div *ngFor="let in of contador(5) ;let i = index" id="estrellas">
+                    <div *ngIf="i < producto.puntuacion; else elseBlock">
+                        <span class="fa fa-star checked"></span>
+                    </div>  
+                    <ng-template #elseBlock>
+                        <span class="fa fa-star "></span>
+                    </ng-template>
+                 </div>
+            </div>
+        
+            
+        </div>
+        <div id="botonver">
+            <button class="boton" [routerLink]="['/producto']" routerLinkActive="router-Link-Active" (click)="obtenerProducto(producto)">Ver</button>
+        </div>
+        <div id="precio">
+            <p style="color:red">${{producto.precio}}</p>
+        </div>
+    </div>
+</div>
